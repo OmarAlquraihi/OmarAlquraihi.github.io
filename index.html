@@ -1,483 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omar Alquraihi — Aspiring Product Manager · Key Accounts · Operations</title>
+<meta name="description" content="Omar Alquraihi — Key Account Manager and product owner in Saudi Arabia's Eastern Province, looking for an entry-level Product Manager role.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0d0f0e; --bg2:#141816; --line:#26302b; --text:#e9eee9; --muted:#9aa69f;
+    --accent:#d9a441; --accent2:#4fb38a; --card:#111513;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+  .mono{font-family:"JetBrains Mono",monospace}
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  /* nav */
+  nav{position:sticky;top:0;z-index:10;background:rgba(13,15,14,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+  .logo{font-family:Fraunces,serif;font-weight:800;font-size:1.25rem;letter-spacing:-.02em}
+  .logo span{color:var(--accent)}
+  nav ul{display:flex;gap:28px;list-style:none;font-size:.9rem;color:var(--muted)}
+  nav ul a:hover{color:var(--text)}
 
-    <title>OMAR AHMED ALQURAIHI</title>
+  /* hero */
+  .hero{padding:110px 0 90px;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;right:-180px;top:-120px;width:620px;height:620px;border-radius:50%;
+    background:radial-gradient(circle,rgba(217,164,65,.16),transparent 65%);pointer-events:none}
+  .eyebrow{color:var(--accent2);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:22px}
+  h1{font-family:Fraunces,serif;font-weight:800;font-size:clamp(2.6rem,6.4vw,5rem);line-height:1.02;letter-spacing:-.035em;max-width:880px}
+  h1 em{font-style:normal;color:var(--accent)}
+  .lede{margin-top:28px;font-size:1.15rem;color:var(--muted);max-width:640px}
+  .cta{margin-top:40px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{padding:13px 22px;border-radius:999px;font-weight:600;font-size:.92rem;border:1px solid var(--line);transition:.2s}
+  .btn.primary{background:var(--accent);color:#111;border-color:var(--accent)}
+  .btn.primary:hover{filter:brightness(1.08)}
+  .btn:hover{border-color:var(--muted)}
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  .stats{margin-top:80px;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .stat{padding:26px 20px;border-right:1px solid var(--line)}
+  .stat:last-child{border-right:0}
+  .stat b{display:block;font-family:Fraunces,serif;font-size:2.2rem;font-weight:600;letter-spacing:-.02em}
+  .stat small{color:var(--muted);font-size:.85rem}
 
-    <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+  section{padding:100px 0;border-bottom:1px solid var(--line)}
+  .sec-head{display:flex;align-items:baseline;gap:18px;margin-bottom:48px}
+  .sec-head .num{color:var(--accent);font-size:.85rem}
+  h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(1.9rem,3.6vw,2.6rem);letter-spacing:-.025em}
 
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  /* roles */
+  .roles{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .role{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px;transition:.25s}
+  .role:hover{border-color:#3a473f;transform:translateY(-3px)}
+  .role .tag{font-size:.72rem;color:var(--accent2);letter-spacing:.12em;text-transform:uppercase}
+  .role h3{font-family:Fraunces,serif;font-size:1.4rem;font-weight:600;margin:14px 0 12px;letter-spacing:-.01em}
+  .role p{color:var(--muted);font-size:.95rem}
+  .role ul{margin-top:18px;list-style:none;font-size:.9rem}
+  .role li{padding:7px 0;border-top:1px dashed var(--line)}
+  .role li::before{content:"→ ";color:var(--accent)}
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  /* projects */
+  .projects{display:grid;gap:18px}
+  .proj{display:grid;grid-template-columns:220px 1fr auto;gap:28px;align-items:start;padding:30px 0;border-top:1px solid var(--line)}
+  .proj:first-child{border-top:0;padding-top:0}
+  .proj .meta{color:var(--muted);font-size:.82rem}
+  .proj h3{font-size:1.2rem;font-weight:600;margin-bottom:8px}
+  .proj p{color:var(--muted);font-size:.96rem;max-width:560px}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+  .chip{font-size:.75rem;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+  .proj .arrow{color:var(--accent);font-size:1.4rem}
 
+  /* skills */
+  .skills{display:grid;grid-template-columns:repeat(4,1fr);gap:36px}
+  .skills h4{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent2);margin-bottom:16px}
+  .skills li{list-style:none;padding:6px 0;color:var(--text);font-size:.95rem}
+
+  /* timeline */
+  .timeline{border-left:1px solid var(--line);margin-left:6px}
+  .t{position:relative;padding:0 0 42px 34px}
+  .t::before{content:"";position:absolute;left:-6px;top:6px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+  .t .when{color:var(--muted);font-size:.8rem}
+  .t h3{font-size:1.1rem;font-weight:600;margin:4px 0 6px}
+  .t p{color:var(--muted);font-size:.95rem;max-width:640px}
+
+  /* contact */
+  .contact{text-align:center;padding:120px 0}
+  .contact h2{font-size:clamp(2.2rem,5vw,3.6rem);max-width:760px;margin:0 auto}
+  .contact p{color:var(--muted);margin:20px auto 36px;max-width:520px}
+  .contact .cta{justify-content:center}
+  footer{padding:30px 0;color:var(--muted);font-size:.82rem}
+  footer .wrap{display:flex;justify-content:space-between}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:860px){
+    nav ul{display:none}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .stat:nth-child(2){border-right:0}
+    .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+    .roles,.skills{grid-template-columns:1fr 1fr}
+    .proj{grid-template-columns:1fr;gap:10px}
+    .proj .arrow{display:none}
+  }
+  @media (max-width:560px){.roles,.skills{grid-template-columns:1fr}.hero{padding:70px 0 60px}}
+</style>
 </head>
+<body>
 
-<body id="page-top" class="index">
+<nav>
+  <div class="wrap">
+    <a href="#" class="logo">Omar<span>.</span></a>
+    <ul>
+      <li><a href="#work">What I do</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">omaralquraihi.github.io</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="pic.jpg" alt="">
-                    <div class="intro-text">
-                        <span class="name">ALQURAIHI, OMAR A.</span>
-                        <hr class="star-light">
-                        <span class="skills">Mobile Application Developer - Object Oriented Programmer - Website Designer</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/resume.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="pp.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                    <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="professionalism.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="Untitled.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="ecomm.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                
-                        </div>
-                        
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About Me</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>I'm a student studying in the University of the Cordilleras. My course is network Major in iformation Technology. I am currently a second year student. </p>
-                </div>
-                <div class="col-lg-4">
-                    <p>I enjoy programming high-level programming. I also love Developing Mobile Applications. I have experienced make some mobile applications.</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Subd. Petersville, Campo sioco,
-                            <br>Baguio City, Philippines, 2600</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Your Website 2016
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow mono">Eastern Province, Saudi Arabia · Open to entry-level PM roles</div>
+    <h1>I find the friction in operations and <em>turn it into products</em> that fix it.</h1>
+    <p class="lede">I'm Omar Alquraihi, a Key Account Manager with a background in logistics operations and product ownership, and an IT graduate. I've spent my career close to customers, stores and supply, and I build tools that solve the problems I find there. Next, I'm moving into Product Management.</p>
+    <div class="cta">
+      <a href="#projects" class="btn primary">See my work</a>
+      <a href="#contact" class="btn">Get in touch</a>
     </div>
 
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Resume</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/resume.png" class="img-responsive img-centered" alt="">
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="stats">
+      <div class="stat"><b>500K</b><small>SAR revenue collected across 11 commercial sites</small></div>
+      <div class="stat"><b>31+</b><small>retail outlets managed per cycle</small></div>
+      <div class="stat"><b>6+</b><small>years in sales, ops &amp; account management</small></div>
+      <div class="stat"><b>17</b><small>commercial sites operated</small></div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Website Project</h2>
-                            <hr class="star-primary">
-                            <img src=“pp.png” class="img-responsive img-centered" alt="">
-                            <p>This the Midterm Project. Visit<a href="https://omaralquraihi.github.io/elitegym/"> elite gym </a> for more information.</p>
-                            <ul class="list-inline item-details">
-                                <li>Click to visit the Webiste
-                                    <strong><a href="https://omaralquraihi.github.io/elitegym/"> elite gym</a>
-                                    </strong>
-                                </li>
-                                
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  </div>
+</header>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num mono">01</span><h2>What I do</h2></div>
+    <div class="roles">
+      <div class="role reveal">
+        <div class="tag mono">Retail · FMCG</div>
+        <h3>Key Account Management</h3>
+        <p>I run store-level execution across Tamimi, Panda and Al Othaim in the Eastern Province.</p>
+        <ul>
+          <li>Outlet visits &amp; shelf audits</li>
+          <li>Out-of-stock &amp; SKU range tracking</li>
+          <li>Working with area &amp; store managers</li>
+          <li>Weekly &amp; bi-weekly reporting</li>
+        </ul>
+      </div>
+      <div class="role reveal">
+        <div class="tag mono">Recruitment · Compliance</div>
+        <h3>Job Order Packages</h3>
+        <p>I prepare complete, accurate job order documentation for employers hiring workers from the Philippines.</p>
+        <ul>
+          <li>MWO-ready document packages</li>
+          <li>Work with licensed Philippine agencies</li>
+          <li>Reusable templates for fast turnaround</li>
+          <li>Outsourced specialist for agencies</li>
+        </ul>
+      </div>
+      <div class="role reveal">
+        <div class="tag mono">Tech · AI</div>
+        <h3>Product &amp; Automation</h3>
+        <p>I approach operational problems like a product owner: understand the user, define the requirement, ship a tool, and iterate.</p>
+        <ul>
+          <li>Product ownership &amp; requirements</li>
+          <li>Logistics operations</li>
+          <li>AI-assisted workflows &amp; automation</li>
+          <li>Data-driven reporting</li>
+        </ul>
+      </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Blog Website</h2>
-                            <hr class="star-primary">
-                            <img src="bbb.png" class="img-responsive img-centered" alt="">
-                            <p>This is a Blog website. <a href="https://omaralquraihi.github.io/blog/">blog Website</a>.</p>
-                            <ul class="list-inline item-details"> 
-                                <li>Click to visit the Website:
-                                    <strong><a href="https://omaralquraihi.github.io/blog/">blog Website</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num mono">02</span><h2>Selected projects</h2></div>
+    <div class="projects">
+
+      <div class="proj reveal">
+        <div class="meta mono">2026 · Operations</div>
+        <div>
+          <h3>KAM Store Visit &amp; Monitoring System</h3>
+          <p>A structured reporting workbook that replaced ad-hoc visit notes. It logs every visit in order, keeps a single "latest status" per outlet, and puts open issues in a tracker with an owner for each action. One cycle covered 42 visits across 31 outlets.</p>
+          <div class="chips"><span class="chip">Excel</span><span class="chip">Data modelling</span><span class="chip">AI workflows</span><span class="chip">Retail ops</span></div>
         </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>news Website</h2>
-                            <hr class="star-primary">
-                            <img src="onepage.png" class="img-responsive img-centered" alt="">
-                            <p>This is a One Page webssite. <a href="https://omaralquraihi.github.io/importantnews/">news Website</a>.</p>
-                            <ul class="list-inline item-details"> 
-                                <li>Click to visit the Website:
-                                    <strong><a href="https://omaralquraihi.github.io/importantnews/">news Website</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="arrow">↗</div>
+      </div>
+
+      <div class="proj reveal">
+        <div class="meta mono">2026 · Operations</div>
+        <div>
+          <h3>Outlet Review &amp; SKU Availability Engine</h3>
+          <p>Rules-based bi-weekly outlet reviews that work out each store's available SKU count from its chain's full range and the gaps found on visit, so availability numbers stay consistent from cycle to cycle.</p>
+          <div class="chips"><span class="chip">Business rules</span><span class="chip">Reporting</span><span class="chip">Arabic / English</span></div>
         </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Hyundai Website</h2>
-                            <hr class="star-primary">
-                            <img src="ecomm.png" class="img-responsive img-centered" alt="">
-                            <p>This is Hyundai webssite. <a href="https://omaralquraihi.github.io/Hyundai/.">Hyundai Website</a>.</p>
-                            <ul class="list-inline item-details"> 
-                                <li>Click to visit the Website:
-                                    <strong><a href="https://omaralquraihi.github.io/Hyundai/.">Hyundai Website</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="arrow">↗</div>
+      </div>
+
+      <div class="proj reveal">
+        <div class="meta mono">2026 · Recruitment</div>
+        <div>
+          <h3>Job Order Package Automation</h3>
+          <p>A template-driven workflow that turns each client's documents into a finished, MWO-ready job order package in a fraction of the manual time, with consistent PDF output.</p>
+          <div class="chips"><span class="chip">Document automation</span><span class="chip">PDF</span><span class="chip">Templates</span><span class="chip">AI</span></div>
         </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2> Project</h2>
-                            <hr class="star-primary">
-                            <img src="fullweb.png" class="img-responsive img-centered" alt="">
-                            <p>This is website. <a href="https://omaralquraihi.github.io/lastwebsite/"> Website</a>.</p>
-                            <ul class="list-inline item-details"> 
-                                <li>Click to visit the Website:
-                                    <strong><a href="https://omaralquraihi.github.io/lastWebsite/"> Project</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="arrow">↗</div>
+      </div>
+
+      <a class="proj reveal" href="https://github.com/OmarAlquraihi?tab=repositories">
+        <div class="meta mono">2017 · Web</div>
+        <div>
+          <h3>Early web projects</h3>
+          <p>Where it started: responsive sites built during my IT degree, including a Hyundai brand site, a news one-pager, a blog and a gym website.</p>
+          <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Bootstrap</span></div>
         </div>
+        <div class="arrow">↗</div>
+      </a>
+
     </div>
+  </div>
+</section>
 
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num mono">03</span><h2>Toolkit</h2></div>
+    <div class="skills reveal">
+      <div><h4 class="mono">Commercial</h4><ul><li>Key account management</li><li>Retail execution</li><li>Stock &amp; OOS control</li><li>Stakeholder management</li></ul></div>
+      <div><h4 class="mono">Product &amp; Ops</h4><ul><li>Product ownership</li><li>Requirements &amp; user needs</li><li>Logistics operations</li><li>Reporting &amp; KPIs</li><li>Process design</li></ul></div>
+      <div><h4 class="mono">Technical</h4><ul><li>Excel / Sheets</li><li>Networking &amp; IT support</li><li>HTML, CSS, JavaScript</li><li>Google Ads (certified)</li><li>AI tools &amp; automation</li></ul></div>
+      <div><h4 class="mono">Languages</h4><ul><li>Arabic</li><li>English</li></ul></div>
+    </div>
+  </div>
+</section>
 
+<section id="journey">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num mono">04</span><h2>Journey</h2></div>
+    <div class="timeline">
+      <div class="t reveal"><div class="when mono">Next</div><h3>Product Manager</h3><p>Looking for an entry-level PM role where I can bring operations experience, customer empathy and a builder's mindset.</p></div>
+      <div class="t reveal"><div class="when mono">May 2023 – Present</div><h3>Merchandiser → Key Account Manager · Sara Group (brand partner)</h3><p>Started as a merchandiser placed on the Carlsberg account through Sara Group, and was promoted to Key Account Manager. I now manage modern-trade accounts across Dammam, Khobar and Jubail, and built AI-assisted visit reporting and SKU availability tracking. Separately, I prepare job order packages for employers hiring from the Philippines as an independent specialist.</p></div>
+      <div class="t reveal"><div class="when mono">Apr 2022 – Feb 2023</div><h3>Key Account Manager &amp; Operations · Alrashfa Contractors</h3><p>King Faisal University project, Al-Hofuf. Ran operations for 17 commercial sites and collected 500,000 SAR in rent revenue. Negotiated agreements with tenants and stakeholders, and used performance data to drive sales and lead generation.</p></div>
+      <div class="t reveal"><div class="when mono">Feb 2021 – Apr 2022</div><h3>Network Operations &amp; Maintenance · Creation Source Est.</h3><p>Ministry of Justice project. Traveled across the Kingdom keeping court IT, network and CCTV systems running.</p></div>
+      <div class="t reveal"><div class="when mono">Aug 2020 – Feb 2021</div><h3>Logistics Sales &amp; Merchandiser · Green Orchard Food Trading (Dr. Schär)</h3><p>Dammam. Sold and merchandised Dr. Schär's gluten-free range in retail stores. Coordinated on-time delivery, found new accounts through market research, and kept customers loyal.</p></div>
+      <div class="t reveal"><div class="when mono">Sep 2019 – May 2020</div><h3>Sales Executive · Arabtec</h3><p>Al-Khobar. Handled client meetings, account management and sales presentations.</p></div>
+      <div class="t reveal"><div class="when mono">2015 – 2018</div><h3>BS Computer Science (IT, Network &amp; Security) · University of the Cordilleras</h3><p>Baguio City, Philippines. Built web and mobile projects. Google Ads certified (2025).</p></div>
+    </div>
+  </div>
+</section>
 
-        
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2 class="reveal">Hiring a PM who has lived the operations?</h2>
+    <p class="reveal">I'm open to entry-level Product Manager roles. I'm also glad to talk about retail operations, logistics, or turning a manual process into a product.</p>
+    <div class="cta reveal">
+      <a href="https://www.linkedin.com/in/omar-alquraihi-3902aa15a/" class="btn primary">Message me on LinkedIn</a>
+      <a href="https://github.com/OmarAlquraihi" class="btn">GitHub</a>
+    </div>
+  </div>
+</section>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<footer><div class="wrap"><span>© 2026 Omar Alquraihi</span><span class="mono">Eastern Province, KSA</span></div></footer>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
-
+<script>
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
 </body>
-
 </html>
